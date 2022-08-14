@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/lib/freedom.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Запись на обучение</title>
+</head>
+<body>
+    <form class="order">
+        <div class="wrapper">
+            <div class="order__block flex-column al-center">
+                <img class="order__img" src="assets/img/img_1.png" alt="">
+                <h1 class="order__title">Запишитесь на занятие.</h1>
+                <div class="d-f gap-15 order__inputs">
+                    <input required class="order__input" type="text" placeholder="Введите ваше имя">
+                    <input id="order-phone" required class="order__input" type="text" placeholder="+7(">
+                    <input required class="order__input" type="email" placeholder="Введите вашу почту">
+                    <button class="order__btn cur-pointer">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+            <div class="order__block order_date_block flex-column al-center">
+                <img class="order__img" src="assets/img/img_1.png" alt="">
+                <div class="order__date cur-pointer">
+                    <h1 class="order__title">Завершите запись на занятие.</h1>
+                    <p class="order__text">
+                        Для этого укажите возраст ребёнка и удобные дату и время.
+                    </p>
+                    <div class="order__date_inputs flex-column gap-30">
+                        <div class="order__item order__select-item flex-column gap-20">
+                            <p class="input__text">Возраст ребёнка <span>*</span></p>
+                            <div id="order__select" class="order__select flex-row-betw p-rel">
+                                <p id="order_value" class="fw-7">6 лет</p>
+                                <input id="select" type="hidden" value="6">
+                                <img id="select_triangle" src="assets/img/icons/triangle.svg" alt="">
+                                <div id="select_block" class="order_select_items flex-column p-abs">
+                                   <div class="select__item" data-years="6">6 лет</div>
+                                   <div class="select__item" data-years="7">7 лет</div>
+                                   <div class="select__item" data-years="8">8 лет</div>
+                                   <div class="select__item" data-years="9">9 лет</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__item flex-column gap-20">
+                            <p class="input__text">Выберите день <span>*</span></p>
+                            <input id="day_input" type="hidden" name="day" value="" required>
+                            <div class="order__days day_inputs flex-wrap flex-row-betw gap-30">
+                                <div class="order__date_item" data-day="14">Пн 15.08</div>
+                                <div class="order__date_item" data-day="15">Пн 15.08</div>
+                                <div class="order__date_item" data-day="16">Пн 15.08</div>
+                                <div class="order__date_item" data-day="17" >Пн 15.08</div>
+                                <div class="order__date_item" data-day="18">Пн 15.08</div>
+                                <div class="order__date_item" data-day="19">Пн 15.08</div>
+                                <div class="order__date_item" data-day="20">Пн 15.08</div>
+                                <div class="order__date_item" data-day="21">Пн 15.08</div>
+                                <div class="order__date_item" data-day="22">Пн 15.08</div>
+                                <div class="order__date_item" data-day="23">Пн 15.08</div>
+                            </div>
+                        </div>
+                        <div class="order__item flex-column gap-20">
+                            <p class="input__text">Выберите время <span>*</span></p>
+                            <input id="time_input" type="hidden" name="time" value="" required>
+                            <div class="order__days time_inputs flex-wrap flex-row-betw gap-30">
+                                <div class="order__date_item" data-time="9:00">9:00</div>
+                                <div class="order__date_item" data-time="10:00">10:00</div>
+                                <div class="order__date_item" data-time="11:00">11:00</div>
+                                <div class="order__date_item" data-time="12:00">12:00</div>
+                                <div class="order__date_item" data-time="13:00">13:00</div>
+                                <div class="order__date_item" data-time="14:00">14:00</div>
+                                <div class="order__date_item" data-time="15:00">15:00</div>
+                                <div class="order__date_item" data-time="16:00">16:00</div>
+                                <div class="order__date_item" data-time="17:00">17:00</div>
+                                <div class="order__date_item" data-time="18:00">18:00</div>
+                            </div>
+                        </div>
+                        <button class="order__finish p-rel">
+                            Записаться
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="assets/js/chooseSelect.js"></script>
+    <script src="assets/js/chooseDate.js"></script>
+    <script src="assets/js/maskPhoneInput.js"></script>
+</body>
+</html>
