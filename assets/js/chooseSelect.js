@@ -14,19 +14,16 @@ const allSelectsClose = () => {
 }
 
 selects.forEach((item, index) => {
-    console.log(item.children[1])
     const select = item.children[1]
     const selectBlock = select.children[3]
-    console.log(selectBlock)
     const selectTriangle = select.children[2]
     const selectReal = select.children[1]
     const orderVal = select.children[0]
     const selectItems = document.querySelectorAll(`#${select.getAttribute('id')} .select__item`)
-    console.log(item.getAttribute('id'))
  
 
     const openSelect = () => {
-		allSelectsClose()
+		//allSelectsClose()
         selectBlock.classList.add('opened')
         selectTriangle.classList.add('opened__img')
     }
@@ -65,7 +62,12 @@ selects.forEach((item, index) => {
         selectBlock.onclick = e => {
             e.stopPropagation()
         }
-        arrSelectsOpened[index] = !arrSelectsOpened[index]
+        if(arrSelectsOpened[index] === true) {
+            arrSelectsOpened[index] = false
+        } else {
+            allSelectsClose()
+            arrSelectsOpened[index] = true
+        }
         checkIsOpened()
     })
 

@@ -3,7 +3,7 @@ body {
     font-weight: normal;
 }
 .wrapper {
-    max-width: 1160px;
+    max-width: 1190px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -28,7 +28,7 @@ body {
     margin-bottom: 30px;
 }
 .order__input {
-    width: 255px;
+    width: 260px;
     padding: 20px 30px;
     font-size: 18px;
     background: #EAEAEA;
@@ -39,7 +39,7 @@ body {
     color: #C4C4C4;
 }
 .order__btn {
-    width: 255px;
+    width: 260px;
     background: #116256;
     height: fit-content;
     align-self: flex-end;
@@ -56,19 +56,24 @@ body {
     margin-top: 128px;
     margin-bottom: 183px;
 }
+.order__select p {
+    color: #116256;
+    font-weight: 700;
+}
 .order__select {
     appearance: none;
     padding: 15px 22px;
     border: 1px solid seagreen;
-    width: 255px;
+    width: 260px;
     background: white;
     border-radius: 7px;
 }
 .select__item {
     background: white;
     padding: 15px 22px;
+    color: #116256;
     font-weight: 700;
-    width: 253px;
+    width: 258px;
     cursor: pointer;
 }
 .opened {
@@ -79,7 +84,7 @@ body {
 }
 
 .order_select_items {
-    top: 94%;
+    top: 92%;
     border: 1px solid seagreen;
     left: -1px;
 	background: white;
@@ -161,6 +166,9 @@ body {
 .order__days::-webkit-scrollbar-thumb {
     display: none;
 }
+.order__inputs {
+    gap: 40px;
+}
 .order__days::-webkit-scrollbar {
     display: none;
 }
@@ -211,6 +219,12 @@ body {
     .order__title {
         font-size: 32px;
         line-height: 41px
+    }
+    .order__inputs {
+        gap: 15px;
+    }
+    .order__bottom {
+        gap: 30px !important;
     }
     .order__text {
         font-size: 19px;
