@@ -82,7 +82,6 @@ body {
     top: 94%;
     border: 1px solid seagreen;
     left: -1px;
-	background: white;
     display: none;
     border-radius: 0 0 7px 7px;
     padding-bottom: 7px;

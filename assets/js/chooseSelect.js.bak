@@ -1,7 +1,7 @@
 
 const selects = document.querySelectorAll('.order__select-item')
 
-let arrSelectsOpened = [false, false, false]
+const arrSelectsOpened = [false, false, false]
 const allSelectsClose = () => {
 	arrSelectsOpened = [false, false, false]
 	selects.forEach(item => {
