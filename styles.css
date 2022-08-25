@@ -25,6 +25,7 @@ body {
 .order__bottom {
     min-width: 560px;
     flex-wrap: wrap;
+    max-width: 560px !important;
 }
 .order__title {
     font-size: 48px;
