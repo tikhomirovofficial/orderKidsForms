@@ -201,7 +201,7 @@ body {
 @media (max-width: 1150px) {
     .order__top {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
     }
    .order__form-bottom {
        flex-direction: column;
@@ -252,6 +252,9 @@ body {
         justify-content: center;
         flex-wrap: wrap;
     }
+    .order__top {
+        justify-content: center;
+    }
     .order__date {
         max-width: 410px;
     }
@@ -293,6 +296,9 @@ body {
     .order__title {
         font-size: 30px;
     }
+    br {
+        display: none;
+    }
     .order__date {
         max-width: 280px;
     }
@@ -301,6 +307,7 @@ body {
     }
     .order__text p {
         width: 100%;
-        font-size: 18px;
+        line-height: 1.5;
+        font-size: 16px;
     }
 }
