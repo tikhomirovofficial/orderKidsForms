@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/lib/freedom.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<script src="assets/lib/jquery.js"></script>
+    <title>Запись на обучение</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="flex-column">
+            <div class="flex-column gap-30 order__form-top">
+                <div class="order__text flex-column ">
+                    <h1 id="title_top">Заполните поля ниже чтобы забронировать участие <br> на недельном курсе <br>Академии Ukids за 0 рублей</h1>
+                    <p>
+                        <b>Внимание!</b> Не забудьте выбрать удобные день и время начала обучения
+                    </p>
+                </div>
+                <div class="d-f flex-row-betw order__inputs order__top">
+                    <input required class="order__input" type="text" placeholder="Введите ваше имя">
+                    <input id="order-phone" required class="order__input" type="text" placeholder="+7(">
+                    <input required class="order__input" type="email" placeholder="Введите вашу почту">
+                    <button class="fade-scroll order__btn cur-pointer">
+                        Записаться
+                    </button>
+                </div>
+
+            </div>
+            <div class="d-f js-between order__form-bottom">
+                <div class="order__text flex-column ">
+                    <h1 id="title">Заполните поля ниже чтобы забронировать участие <br> на недельном курсе <br>Академии Ukids за 0 рублей</h1>
+                    <p>
+                        <b>Внимание!</b> Не забудьте выбрать удобные день и время начала обучения
+                    </p>
+                </div>
+                <div class="d-f order__inputs order__bottom">
+                    <div id="order_name" class="order__item flex-column gap-15">
+                        <p class="input__text">Имя ребёнка <span>*</span></p>
+                        <input type="text" class="order__input-bottom">
+                    </div>
+                    <div class="order__item order__select-item flex-column gap-15">
+                        <p class="input__text">Возраст ребёнка <span>*</span></p>
+                        <div id="order__select" class="order__select flex-row-betw p-rel">
+                            <p id="order_years" class="fw-7">6 лет</p>
+                            <input id="select" type="hidden" value="6">
+                            <img id="select_triangle" src="assets/img/icons/triangle.svg" alt="">
+                            <div id="select_block" class="order_select_items flex-column p-abs">
+                                <div class="select__item" data-val="6">6 лет</div>
+                                <div class="select__item" data-val="7">7 лет</div>
+                                <div class="select__item" data-val="8">8 лет</div>
+                                <div class="select__item" data-val="9">9 лет</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__item order__select-item flex-column gap-15">
+                        <p class="input__text">Выберите день<span>*</span></p>
+                        <div id="order__select_day" class="order__select flex-row-betw p-rel">
+                            <p id="order_value_day" class="fw-7">Понедельник 16.08</p>
+                            <input type="hidden" value="6">
+                            <img src="assets/img/icons/triangle.svg" alt="">
+                            <div class="order_select_items flex-column p-abs">
+                                <div class="select__item" data-val="Понедельник 16.08">Понедельник 16.08</div>
+                                <div class="select__item" data-val="Понедельник 17.08">Понедельник 17.08</div>
+                                <div class="select__item" data-val="Понедельник 18.08">Понедельник 18.08</div>
+                                <div class="select__item" data-val="Понедельник 19.08">Понедельник 19.08</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__item order__select-item flex-column gap-15">
+                        <p class="input__text">Выберите время<span>*</span></p>
+                        <div id="order__select_time" class="order__select flex-row-betw p-rel">
+                            <p class="fw-7">9:00</p>
+                            <input type="hidden" value="6">
+                            <img src="assets/img/icons/triangle.svg" alt="">
+                            <div class="order_select_items flex-column p-abs">
+                                <div class="select__item" data-val="9:00">9:00</div>
+                                <div class="select__item" data-val="10:00">10:00</div>
+                                <div class="select__item" data-val="11:00">11:00</div>
+                                <div class="select__item" data-val="12:00">12:00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="order__btn cur-pointer">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="assets/js/chooseSelect.js"></script>
+    <script src="assets/js/fadeScroll.js"></script>
+    <script src="assets/js/chooseDate.js"></script>
+    <script src="assets/js/maskPhoneInput.js"></script>
+</body>
+</html>
