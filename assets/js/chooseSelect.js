@@ -12,6 +12,9 @@ const allSelectsClose = () => {
         selectTriangle.classList.remove('opened__img')
 	})
 }
+document.getElementById('order_name').addEventListener('click', () => {
+    allSelectsClose()
+})
 
 selects.forEach((item, index) => {
     const select = item.children[1]
