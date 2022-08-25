@@ -3,7 +3,7 @@ body {
     font-weight: normal;
 }
 .wrapper {
-    max-width: 1190px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -28,7 +28,7 @@ body {
     max-width: 560px;
 }
 .order__title {
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: 30px;
 }
 .order__input {
@@ -42,6 +42,7 @@ body {
 .order__input::placeholder {
     color: #C4C4C4;
 }
+
 .order__btn {
     width: 260px;
     background: #116256;
@@ -188,7 +189,7 @@ body {
     gap: 30px;
 }
 .order__text h1 {
-    font-size: 41px;
+    font-size: 39px;
     line-height: 1.2;
 }
 .order__text p {
