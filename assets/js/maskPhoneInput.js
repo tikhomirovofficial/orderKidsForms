@@ -1,1 +1,1 @@
-$("#order-phone").inputmask('+7(999)-999-9999')
+$("#order-phone").inputmask('+7(999)999-99-99')
